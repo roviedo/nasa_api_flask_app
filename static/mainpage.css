@@ -1,0 +1,15 @@
+body {
+  background: #F0F0F0;
+}
+img {
+  width: 100%;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+  border-radius: 10px;
+  background: #FFF;
+  margin-bottom: 10px;
+}
+.grid-item--width2 { width: 40%; }
