@@ -6,10 +6,6 @@ app = Flask(
 )
 
 @app.route('/')
-def hello_world():
-    return 'Main Page under construction'
-
-@app.route('/mars_rover')
 def mars_rover_photos():
     camera_url_arg = request.args.get('camera')
     sol_url_arg = request.args.get('sol')
