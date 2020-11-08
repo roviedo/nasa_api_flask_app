@@ -18,8 +18,7 @@ def mars_rover_photos():
         sol = sol_url_arg
     url = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=%s&camera=%s&api_key=%s' % (sol, camera, api_key)
     r = requests.get(url = url, params = {})
-    data = r.json() 
-    print('data', data)
+    data = r.json()
     return render_template('index.html', data=data['photos'])
 
 if __name__ == '__main__':
