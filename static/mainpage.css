@@ -11,5 +11,11 @@ img {
   border-radius: 10px;
   background: #FFF;
   margin-bottom: 10px;
+  padding: 0.5rem;
 }
+
+.grid-item p span {
+  font-weight: bold;
+}
+
 .grid-item--width2 { width: 40%; }

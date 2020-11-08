@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel= "stylesheet" type= "text/css" href= "/static/mainpage.css">
+    <link rel= "stylesheet" type= "text/css" href= "/static/mainpage.css?v=4">
     <script src="/static/masonry.pkgd.min.js"></script>
     <script src="/static/imagesloaded.pkgd.min.js"></script>
     <title>Mars Curiosity Rover photos</title>
@@ -37,8 +37,10 @@
         <div class="grid-sizer"></div>
         {% for item in data %}
             <div class="grid-item">
-                <p>{{ item.camera.name }}</p>
                 <img src={{ item.img_src }} />
+                <p><span>Acronym: </span>{{ item.camera.name }}</p>
+                <p><span>Full name: </span>{{ item.camera.full_name}}</p>
+                <p><span>Date: </span>{{ item.earth_date }}</p>
             </div>
         {% endfor %}
     </div>
